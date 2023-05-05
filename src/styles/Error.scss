@@ -1,0 +1,26 @@
+$MainColor : #FF6060;
+$SecondColor : white;
+
+.error {
+    margin-top: 160px;
+    color: $MainColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .error__title {
+        font-size: 36px;
+        margin-top: 65px;
+    }
+
+    .error__text {
+        font-size: 18px;
+        margin-top: 180px;
+        text-decoration: none;
+        color: $MainColor;
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+} 

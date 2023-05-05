@@ -1,11 +1,13 @@
 import Error404 from "../../assets/404.svg"
+import { Link } from "react-router-dom"
+import '../../styles/Error.scss'
 
 function Error() {
     return (
-      <div>
-        <img src={Error404} alt=""></img>
-        <h1>Oups! La page que vous avez demandé n'existe pas.</h1>
-        <p>Retourner sur la page d'accueil</p>
+      <div className="error">
+        <img src={Error404} className="error__img" alt="Logo 404"></img>
+        <h1 className="error__title">Oups! La page que vous avez demandé n'existe pas.</h1>
+        <Link className="error__text" to="/">Retourner sur la page d'accueil</Link>
       </div>
     )
   }
