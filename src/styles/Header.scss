@@ -1,0 +1,23 @@
+$MainColor : #FF6060;
+$SecondColor : white;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 100px 0px 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 55px;
+
+    .navbar__link {
+        text-decoration: none;
+        color: $MainColor;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
