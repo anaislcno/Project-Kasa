@@ -1,0 +1,44 @@
+$MainColor : #FF6060;
+$SecondColor : white;
+$BackColor : #F6F6F6;
+
+.container {
+    background: $BackColor;
+    margin-top: 40px;
+    border-radius: 25px;
+    padding: 55px 50px;
+    position: relative;
+    display: grid;
+    z-index: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 55px;
+    justify-items: center;
+
+    .card {
+        font-size: 18px;
+        color: $SecondColor;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 340px;
+        width: 340px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+        .card__img {
+            object-fit: cover;
+            height: 340px;
+            width: 340px;
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        .card__title {
+            // padding: 10px 20px 10px 20px;
+            bottom: 20px;
+            position: absolute;
+            align-self: center;
+            width: 300px;
+        }
+    }
+}
