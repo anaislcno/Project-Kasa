@@ -1,6 +1,6 @@
 import Error404 from "../../assets/404.svg"
 import { Link } from "react-router-dom"
-import '../../styles/Error.scss'
+import '../Error/Error.scss'
 
 function Error() {
     return (

@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner"
 import HousingGrid from "../../components/HousingGrid"
-import '../../styles/Home.scss'
+import '../Home/Home.scss'
 
 function Home() {
     return (

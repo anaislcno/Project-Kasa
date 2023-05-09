@@ -1,6 +1,6 @@
 import React from "react";
 import { housingList } from "../../datas/logements";
-import '../../styles/HousingGrid.scss'
+import '../HousingGrid/HousingGrid.scss'
 
 function HousingGrid() {
   return (

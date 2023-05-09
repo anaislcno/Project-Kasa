@@ -1,5 +1,5 @@
 import LogoLight from '../../assets/logo-white.svg'
-import '../../styles/Footer.scss'
+import '../Footer/Footer.scss'
 
 function Footer() {
   return (
