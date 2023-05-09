@@ -10,19 +10,35 @@ $SecondColor : white;
     flex-direction: column;
     align-items: center;
 
+    @media screen and (max-width: 376px) {
+        margin: 20px;
+        font-size: 24px;
+    }
+
     .banner__img {
         object-fit: cover;
         position: relative;
         filter: brightness(70%);
-        height: 223px;
+        height: 225px;
         width: 1240px;
         border-radius: 25px;
+
+        @media screen and (max-width: 376px) {
+        width: 335px;
+        height: 110px;
+        border-radius: 10px;
+        }
     }
     
     .banner__text {
         top: 250px;
         position: absolute;
         align-self: center;
+
+        @media screen and (max-width: 376px) {
+        top: 120px;
+        left: 40px;
+        inline-size: 225px;
+        }
     }
 }
-

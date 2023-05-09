@@ -14,6 +14,13 @@ $BackColor : #F6F6F6;
     grid-gap: 55px;
     justify-items: center;
 
+    @media screen and (max-width: 376px) {
+        background: none;
+        padding: 0;
+        margin-top: 20px;
+        grid-gap: 20px;
+    }
+
     .card {
         font-size: 18px;
         color: $SecondColor;
@@ -25,12 +32,22 @@ $BackColor : #F6F6F6;
         border-radius: 10px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
+        @media screen and (max-width: 376px) {
+            height: 255px;
+            width: 335px;
+        }
+
         .card__img {
             object-fit: cover;
             height: 340px;
             width: 340px;
             border-radius: 10px;
             z-index: -1;
+
+            @media screen and (max-width: 376px) {
+                height: 255px;
+                width: 335px;
+            }
         }
 
         .card__title {

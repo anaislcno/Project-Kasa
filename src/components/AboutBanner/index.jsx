@@ -3,8 +3,8 @@ import '../AboutBanner/AboutBanner.scss'
 
 function AboutBanner() {
   return (
-    <article className='banner'>
-    <img src={AboutImg} alt='Homescape' className='banner__img' />
+    <article className='about-banner'>
+    <img src={AboutImg} alt='Homescape' className='about-banner__img' />
     </article>
   )
 }
