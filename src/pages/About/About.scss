@@ -2,8 +2,12 @@ $MainColor : #FF6060;
 $SecondColor : white;
 $BackColor : #F6F6F6;
 
-.collapse {
+.about__collapse {
     align-items: center;
     display: flex;
     flex-direction: column;
+
+    .collapse__btn {
+        margin: 30px 100px 0px 100px;
+    }
 }

@@ -491,7 +491,7 @@ export const housingList = [
 
   {
     id: "1e180563",
-    title: "Charmant apt aux portes de Paris",
+    title: "Charmant appartement aux portes de Paris",
     cover:
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
     pictures: [

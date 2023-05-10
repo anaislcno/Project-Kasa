@@ -1,3 +1,19 @@
 $MainColor : #FF6060;
 $SecondColor : white;
 $BackColor : #F6F6F6;
+
+.housing__collapse {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    margin-top: 30px;
+
+    .collapse__btn {
+        width: 580px;
+    }
+
+    .collapse__text {
+        max-width: 580px;
+        margin: 0;
+    }
+}
