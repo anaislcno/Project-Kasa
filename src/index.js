@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Error from "./components/Error";
 import Footer from "./components/Footer";
-import Housing from "./pages/Housing";
+import HousingSheet from "./pages/HousingSheet";
 import "./index.scss";
 
 ReactDOM.render(
@@ -16,7 +16,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/housing" element={<Housing />} />
+        <Route path="/housing" element={<HousingSheet />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

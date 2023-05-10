@@ -1,10 +1,9 @@
-import AboutBanner from "../../components/AboutBanner"
+import '../HousingSheet/HousingSheet.scss'
 import Collapse from "../../components/Collapse"
 import { housingList } from "../../datas/logements";
-import "../About/About.scss"
 
 
-function About() {
+function HousingSheet() {
   const aboutTemplate = ['La bienveillance fait partie des valeurs fondatrices de Kasa.\n Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.'];
   const equipmentList = [];
 
@@ -15,15 +14,13 @@ function About() {
 
   return (
       <div>
-        <AboutBanner />
         <section className="collapse">
-        <Collapse label="Responsabilité" collapseDescription={aboutTemplate}/>
-        <Collapse label="Respect" collapseDescription={aboutTemplate}/>
-        <Collapse label="Service" collapseDescription={aboutTemplate}/>
-        <Collapse label="Sécurité" collapseDescription={equipmentList}/>
+        <Collapse label="Description" collapseDescription={aboutTemplate}/>
+        <hr/>
+        <Collapse label="Équipements" collapseDescription={equipmentList}/>
         </section>
       </div>
     )
   }
   
-  export default About
+  export default HousingSheet

@@ -1,0 +1,35 @@
+$MainColor : #FF6060;
+$SecondColor : white;
+$BackColor : #F6F6F6;
+
+.collapse__btn {
+    color: $SecondColor;
+    background-color: $MainColor;
+    width: 1020px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 18px;
+    margin: 30px 100px 0px 100px;
+    position: relative;
+    
+    @media screen and (max-width: 376px) {
+        margin: 0px 20px;
+    }
+
+    .collapse__img {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+    }
+}
+
+.collapse__text {
+    background-color: $BackColor;
+    color: $MainColor;
+    padding: 35px 20px 20px 20px;
+    margin: 0px 100px;
+    max-width: 1020px;
+}
