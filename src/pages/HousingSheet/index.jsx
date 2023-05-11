@@ -1,23 +1,27 @@
+import React from 'react';
 import '../HousingSheet/HousingSheet.scss'
+import { useParams, Navigate } from 'react-router-dom';
 import Collapse from "../../components/Collapse"
-// import { housingList } from "../../datas/logements";
+import Tags from '../../components/Tags';
+import { housingList } from "../../datas/logements";
 
 
 function HousingSheet() {
-  const aboutTemplate = ['La bienveillance fait partie des valeurs fondatrices de Kasa.\n Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.'];
-  
-  // const equipmentList = [];
+  const { id } = useParams();
+  const housing = housingList.find((housing) => housing.id === id)
 
-  // housingList.map(({equipments}) => {
-  //   equipmentList.push(equipments);
-  // });
+  if(!housing) {
+    return <Navigate to="/error" />;
+  }
 
+  const { description, equipments } = housing;
 
   return (
       <div>
+        < Tags />
         <section className="housing__collapse">
-        <Collapse label="Description" collapseDescription={aboutTemplate}/>
-        <Collapse label="Équipements" collapseDescription={aboutTemplate}/>
+        <Collapse label="Description" collapseDescription={[description]}/>
+        <Collapse label="Équipements" collapseDescription={[equipments]}/>
         </section>
       </div>
     )
