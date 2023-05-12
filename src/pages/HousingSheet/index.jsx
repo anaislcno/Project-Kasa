@@ -14,13 +14,19 @@ function HousingSheet() {
     return <Navigate to="/error" />;
   }
 
-  const { description, equipments, tags } = housing;
+  const { description, equipments, tags, title, location } = housing;
   const host = housing.host;
 
   return (
       <div>
-        <Tags tags={tags}/>
+        <section className='informations-container'>
+          <div className='housing__infos'>
+          <h1>{title}</h1>
+          <h3>{location}</h3>
+          </div>
         <HostCard host={host}/>
+        </section>
+        <Tags tags={tags}/>
         <section className="housing__collapse">
         <Collapse label="Description" collapseDescription={[description]}/>
         <Collapse label="Équipements" collapseDescription={equipments}/>

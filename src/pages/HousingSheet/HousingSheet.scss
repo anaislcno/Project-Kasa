@@ -2,6 +2,26 @@ $MainColor : #FF6060;
 $SecondColor : white;
 $BackColor : #F6F6F6;
 
+.informations-container {
+    display: flex;
+    justify-content: space-between;
+
+    .housing__infos {
+        margin: 0px 100px;
+        color: $MainColor;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 36px;
+            line-height: 50px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+}
+
 .housing__collapse {
     display: flex;
     justify-content: center;
