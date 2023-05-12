@@ -7,7 +7,6 @@ import Tags from '../../components/Tags';
 import HostCard from '../../components/HostCard';
 import Rating from '../../components/Rating';
 import Slideshow from '../../components/Slideshow';
-import { sliderData } from '../../components/Slideshow/sliderData';
 
 function HousingSheet() {
   const { id } = useParams();
@@ -17,12 +16,12 @@ function HousingSheet() {
     return <Navigate to="/error" />;
   }
 
-  const { description, equipments, tags, title, location, rating } = housing;
+  const { description, equipments, tags, title, location, rating, pictures } = housing;
   const host = housing.host;
 
   return (
       <div>
-        <Slideshow slides={sliderData}/>
+        <Slideshow pictures={pictures}/>
         <section className='informations-container'>
           <div className='housing__infos'>
           <h1>{title}</h1>

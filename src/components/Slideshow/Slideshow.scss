@@ -43,4 +43,15 @@ $BackColor : #F6F6F6;
         transition-duration: 1s;
         transform: scale(1.08);
     }
+
+    .slide__number {
+        z-index: 10;
+        position: absolute;
+        bottom: 25px;
+        color: $SecondColor;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 5px 15px;
+    }
 }
