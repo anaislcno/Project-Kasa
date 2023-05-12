@@ -1,3 +1,16 @@
 $MainColor : #FF6060;
 $SecondColor : white;
 $BackColor : #F6F6F6;
+
+.tag-container {
+    margin: 0px 100px;
+
+    .tag__name {
+        color: $SecondColor;
+        font-size: 14px;
+        background-color: $MainColor;
+        margin: 5px;
+        border-radius: 10px;
+        padding: 2px 20px;
+    }
+}

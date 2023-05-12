@@ -14,11 +14,11 @@ function HousingSheet() {
     return <Navigate to="/error" />;
   }
 
-  const { description, equipments } = housing;
+  const { description, equipments, tags } = housing;
 
   return (
       <div>
-        < Tags />
+        <Tags tags={tags}/>
         <section className="housing__collapse">
         <Collapse label="Description" collapseDescription={[description]}/>
         <Collapse label="Équipements" collapseDescription={[equipments]}/>

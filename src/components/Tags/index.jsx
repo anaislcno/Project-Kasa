@@ -1,16 +1,15 @@
 import React from "react";
 import "../Tags/Tags.scss"
-import { housingList } from "../../datas/logements";
 
-function Tags() {
+function Tags ({ tags }) {
   return (
-    <ul className="tags">
-      {housingList.map(({ id, tags }) =>
-      <div key={id} className="">
-        <p className="tags__names">{tags}</p>
-      </div>
-      )}
-    </ul>
+    <div className="tag-container">
+      {tags.map((tag, id) => (
+        <span key={id} className="tag__name">
+          {tag}
+        </span>
+      ))}
+    </div>
   );
 }
 
