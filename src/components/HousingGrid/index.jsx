@@ -6,7 +6,6 @@ import '../HousingGrid/HousingGrid.scss'
 
 function HousingGrid(props) {
 
-
   return (
     <ul className="container">
       {housingList.map(({ id, title, cover }) =>

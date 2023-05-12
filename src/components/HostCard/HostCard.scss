@@ -1,0 +1,22 @@
+$MainColor : #FF6060;
+$SecondColor : white;
+$BackColor : #F6F6F6;
+
+.host-container {
+    display: flex;
+    align-items: center;
+
+    .host-card__name {
+        font-size: 18px;
+        color: $MainColor;
+        margin-right: 10px;
+        max-width: 90px;
+        text-align: end;
+    }
+
+    .host-card__img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
+}
