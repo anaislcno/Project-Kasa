@@ -1,11 +1,13 @@
 import React from 'react';
-import '../HousingSheet/HousingSheet.scss'
 import { useParams, Navigate } from 'react-router-dom';
+import { housingList } from "../../datas/logements";
+import '../HousingSheet/HousingSheet.scss'
 import Collapse from "../../components/Collapse"
 import Tags from '../../components/Tags';
-import { housingList } from "../../datas/logements";
 import HostCard from '../../components/HostCard';
 import Rating from '../../components/Rating';
+import Slideshow from '../../components/Slideshow';
+import { sliderData } from '../../components/Slideshow/sliderData';
 
 function HousingSheet() {
   const { id } = useParams();
@@ -20,6 +22,7 @@ function HousingSheet() {
 
   return (
       <div>
+        <Slideshow slides={sliderData}/>
         <section className='informations-container'>
           <div className='housing__infos'>
           <h1>{title}</h1>

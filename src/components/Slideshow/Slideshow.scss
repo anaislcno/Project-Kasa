@@ -1,0 +1,46 @@
+$MainColor : #FF6060;
+$SecondColor : white;
+$BackColor : #F6F6F6;
+
+.slider {
+    position: relative;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px 40px 100px;
+
+    .slider__img {
+        width: 1150px;
+        height: 415px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .slider__icon {
+        position: absolute;
+        top: 45%;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .slider__icon--left {
+        left: 25px;
+    }
+    
+    .slider__icon--right {
+        right: 25px;
+    }
+
+    .slide {
+        opacity: 0;
+        transition-duration: 1s linear;
+    }
+
+    .slide.active {
+        opacity: 1;
+        transition-duration: 1s;
+        transform: scale(1.08);
+    }
+}

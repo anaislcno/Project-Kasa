@@ -30,6 +30,9 @@ $BackColor : #F6F6F6;
     }
 }
 
-.collapse__text {
-    font-size: 12px;
+@media screen and (max-width: 376px) {
+    .collapse__text {
+        font-size: 12px;
+        margin: 0px 20px;
+    }
 }
