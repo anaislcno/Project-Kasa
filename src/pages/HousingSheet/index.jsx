@@ -5,6 +5,7 @@ import Collapse from "../../components/Collapse"
 import Tags from '../../components/Tags';
 import { housingList } from "../../datas/logements";
 import HostCard from '../../components/HostCard';
+import Rating from '../../components/Rating';
 
 function HousingSheet() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ function HousingSheet() {
     return <Navigate to="/error" />;
   }
 
-  const { description, equipments, tags, title, location } = housing;
+  const { description, equipments, tags, title, location, rating } = housing;
   const host = housing.host;
 
   return (
@@ -26,7 +27,10 @@ function HousingSheet() {
           </div>
         <HostCard host={host}/>
         </section>
+        <section className='housing__additional-infos'>
         <Tags tags={tags}/>
+        <Rating rate={rating}/>
+        </section>
         <section className="housing__collapse">
         <Collapse label="Description" collapseDescription={[description]}/>
         <Collapse label="Équipements" collapseDescription={equipments}/>

@@ -4,7 +4,7 @@ import { housingList } from "../../datas/logements";
 import '../HousingGrid/HousingGrid.scss'
 
 
-function HousingGrid(props) {
+function HousingGrid() {
 
   return (
     <ul className="container">

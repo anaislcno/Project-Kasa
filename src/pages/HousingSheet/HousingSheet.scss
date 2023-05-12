@@ -22,6 +22,11 @@ $BackColor : #F6F6F6;
     }
 }
 
+.housing__additional-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
 .housing__collapse {
     display: flex;
     justify-content: center;
