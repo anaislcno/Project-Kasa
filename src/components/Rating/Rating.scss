@@ -1,11 +1,21 @@
 .rating {
-    margin: 0px 0px 0px 60px;
-
     .star__active {
         margin-left: 15px;
+
+        @media screen and (max-width: 376px) {
+            height: 15px;
+            width: 15px;
+            margin-left: 5px;
+        }
     }
 
     .star__inactive {
         margin-left: 15px;
+
+        @media screen and (max-width: 376px) {
+            height: 15px;
+            width: 15px;
+            margin-left: 5px;
+        }
     }
 }

@@ -5,7 +5,7 @@ $BackColor : #F6F6F6;
 .host-container {
     display: flex;
     align-items: center;
-    margin: 0px 100px;
+    justify-content: flex-end;
 
     .host-card__name {
         font-size: 18px;
@@ -13,11 +13,20 @@ $BackColor : #F6F6F6;
         margin-right: 10px;
         max-width: 90px;
         text-align: end;
+
+        @media screen and (max-width: 376px) {
+            font-size: 12px;
+        }
     }
 
     .host-card__img {
         width: 65px;
         height: 65px;
         border-radius: 50%;
+
+        @media screen and (max-width: 376px) {
+            width: 35px;
+            height: 35px;
+        }
     }
 }

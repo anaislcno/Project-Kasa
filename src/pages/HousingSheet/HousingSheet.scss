@@ -32,17 +32,16 @@ $BackColor : #F6F6F6;
                 margin-bottom: 20px;
 
                 @media screen and (max-width: 376px) {
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
-
-    
+   
                 h1 {
                     font-size: 36px;
                     line-height: 50px;
     
                     @media screen and (max-width: 376px) {
                         font-size: 18px;
-                        line-height: 25px;
+                        line-height: 30px;
                     }
                 }
     
@@ -60,6 +59,14 @@ $BackColor : #F6F6F6;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+
+            @media screen and (max-width: 376px) {
+                font-size: 12px;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
         }
     }
     
@@ -68,14 +75,42 @@ $BackColor : #F6F6F6;
         justify-content: center;
         gap: 75px;
         margin-top: 30px;
+
+        @media screen and (max-width: 376px) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+            gap: 0;
+        }
     
         .collapse__btn {
             width: 580px;
+
+            @media screen and (max-width: 376px) {
+                max-height: 30px;
+                max-width: 335px;
+                font-size: 13px;
+                margin: 20px 20px 0px 20px;
+            }
         }
     
         .collapse__text {
             max-width: 580px;
             margin: 0;
+
+            @media screen and (max-width: 376px) {
+                font-size: 12px;
+                margin: 0px 20px;
+            }
+        }
+
+        @media screen and (max-width: 376px) {
+            .collapse__img {
+                max-height: 18px;
+                max-width: 18px;
+                top: 10px;
+                right: 10px;
+            }
         }
     }
 }
