@@ -3,7 +3,6 @@ $SecondColor : white;
 $BackColor : #F6F6F6;
 
 .tag-container {
-    margin: 0px 100px;
 
     .tag__name {
         color: $SecondColor;
@@ -12,5 +11,9 @@ $BackColor : #F6F6F6;
         margin-right: 5px;
         border-radius: 10px;
         padding: 2px 20px;
+
+        @media screen and (max-width: 376px) {
+            font-size: 10px;
+        }
     }
 }

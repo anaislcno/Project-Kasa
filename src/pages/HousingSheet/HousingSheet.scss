@@ -2,43 +2,80 @@ $MainColor : #FF6060;
 $SecondColor : white;
 $BackColor : #F6F6F6;
 
-.informations-container {
-    display: flex;
-    justify-content: space-between;
+.housing-sheet {
+    margin: 0px 100px;
 
-    .housing__infos {
-        margin: 0px 100px;
-        color: $MainColor;
-        margin-bottom: 20px;
-
-        h1 {
-            font-size: 36px;
-            line-height: 50px;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
-    }
-}
-
-.housing__additional-infos {
-    display: flex;
-    justify-content: space-between;
-}
-
-.housing__collapse {
-    display: flex;
-    justify-content: center;
-    gap: 75px;
-    margin-top: 30px;
-
-    .collapse__btn {
-        width: 580px;
+    @media screen and (max-width: 376px) {
+        margin: 0px 20px;
     }
 
-    .collapse__text {
-        max-width: 580px;
-        margin: 0;
+    .global-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media screen and (max-width: 376px) {
+            flex-direction: column;
+        }
+    
+        .informations-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            @media screen and (max-width: 376px) {
+                // left: -70px;
+            }
+    
+            .housing__infos {
+                color: $MainColor;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 376px) {
+                    margin-bottom: 10px;
+                }
+
+    
+                h1 {
+                    font-size: 36px;
+                    line-height: 50px;
+    
+                    @media screen and (max-width: 376px) {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                }
+    
+                h3 {
+                    font-size: 18px;
+    
+                    @media screen and (max-width: 376px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+        .housing__additional-infos {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+    
+    .housing__collapse {
+        display: flex;
+        justify-content: center;
+        gap: 75px;
+        margin-top: 30px;
+    
+        .collapse__btn {
+            width: 580px;
+        }
+    
+        .collapse__text {
+            max-width: 580px;
+            margin: 0;
+        }
     }
 }

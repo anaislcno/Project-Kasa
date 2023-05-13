@@ -10,11 +10,20 @@ $BackColor : #F6F6F6;
     align-items: center;
     margin: 40px 100px 40px 100px;
 
+    @media screen and (max-width: 376px) {
+        height: 255px;
+    }
+
     .slider__img {
         width: 1150px;
         height: 415px;
         border-radius: 25px;
         object-fit: cover;
+
+        @media screen and (max-width: 376px) {
+            height: 255px;
+            width: 325px;
+        }
     }
 
     .slider__icon {
@@ -23,14 +32,27 @@ $BackColor : #F6F6F6;
         z-index: 10;
         cursor: pointer;
         user-select: none;
+
+        @media screen and (max-width: 376px) {
+            height: 24px;
+            width: 24px;
+        }
     }
     
     .slider__icon--left {
         left: 25px;
+
+        // @media screen and (max-width: 376px) {
+        //     left: -70px;
+        // }
     }
     
     .slider__icon--right {
         right: 25px;
+
+        // @media screen and (max-width: 376px) {
+        //     right: -70px;
+        // }
     }
 
     .slide {
@@ -53,5 +75,9 @@ $BackColor : #F6F6F6;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 20px;
         padding: 5px 15px;
+
+        @media screen and (max-width: 376px) {
+            display: none;
+        }
     }
 }

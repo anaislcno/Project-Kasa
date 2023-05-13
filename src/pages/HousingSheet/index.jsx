@@ -20,22 +20,24 @@ function HousingSheet() {
   const host = housing.host;
 
   return (
-      <div>
+      <div className='housing-sheet'>
         <Slideshow pictures={pictures}/>
-        <section className='informations-container'>
-          <div className='housing__infos'>
-          <h1>{title}</h1>
-          <h3>{location}</h3>
-          </div>
-        <HostCard host={host}/>
-        </section>
-        <section className='housing__additional-infos'>
-        <Tags tags={tags}/>
-        <Rating rate={rating}/>
-        </section>
+        <div  className='global-container'>
+          <section className='informations-container'>
+            <div className='housing__infos'>
+            <h1>{title}</h1>
+            <h3>{location}</h3>
+            </div>
+            <Tags tags={tags}/>
+          </section>
+          <section className='housing__additional-infos'>
+            <HostCard host={host}/>
+            <Rating rate={rating}/>
+          </section>
+        </div>
         <section className="housing__collapse">
-        <Collapse label="Description" collapseDescription={[description]}/>
-        <Collapse label="Équipements" collapseDescription={equipments}/>
+          <Collapse label="Description" collapseDescription={[description]}/>
+          <Collapse label="Équipements" collapseDescription={equipments}/>
         </section>
       </div>
     )
