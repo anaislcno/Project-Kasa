@@ -14,7 +14,7 @@ const toggle = () => {
   };
   
   return (
-    <div>
+    <div className="collapse__wrapper">
       <button className="collapse__btn" onClick={toggle}>{props.label}
       <img className="collapse__img" src={image} alt="Toggle Collapse" />
       </button>

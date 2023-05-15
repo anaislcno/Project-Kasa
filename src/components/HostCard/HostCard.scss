@@ -14,7 +14,7 @@ $BackColor : #F6F6F6;
         max-width: 90px;
         text-align: end;
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 480px) {
             font-size: 12px;
         }
     }
@@ -24,7 +24,7 @@ $BackColor : #F6F6F6;
         height: 65px;
         border-radius: 50%;
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width:480px) {
             width: 35px;
             height: 35px;
         }

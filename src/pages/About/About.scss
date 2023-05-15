@@ -2,15 +2,22 @@ $MainColor : #FF6060;
 $SecondColor : white;
 $BackColor : #F6F6F6;
 
+.about-page {
+    margin: 0px 100px;
+
+    @media screen and (max-width: 480px) {
+        margin: 0px 20px;
+    }
+}
 .about__collapse {
     align-items: center;
     display: flex;
     flex-direction: column;
 
     .collapse__btn {
-        margin: 30px 100px 0px 100px;
+        margin: 30px 0px 0px 0px;
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 480px) {
             max-height: 30px;
             max-width: 335px;
             font-size: 13px;
@@ -21,7 +28,7 @@ $BackColor : #F6F6F6;
     .collapse__img {
         position: absolute;
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 480px) {
             max-height: 18px;
             max-width: 18px;
             top: 10px;
@@ -30,7 +37,7 @@ $BackColor : #F6F6F6;
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 480px) {
     .collapse__text {
         font-size: 12px;
         margin: 0px 20px;

@@ -10,20 +10,22 @@ $BackColor : #F6F6F6;
     align-items: center;
     margin: 40px 100px 40px 100px;
 
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 480px) {
         height: 255px;
         margin: 25px 0px 20px 0px;
     }
 
     .slider__img {
-        width: 1150px;
+        width: 80vw;
+        // width: 1150px;
         height: 415px;
         border-radius: 25px;
         object-fit: cover;
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 480px) {
             height: 255px;
-            width: 325px;
+            // width: 325px;
+            width: 87vw;
         }
     }
 
@@ -34,26 +36,18 @@ $BackColor : #F6F6F6;
         cursor: pointer;
         user-select: none;
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 480px) {
             height: 24px;
             width: 24px;
         }
     }
     
     .slider__icon--left {
-        left: 25px;
-
-        @media screen and (max-width: 376px) {
-            left: 0px;
-        }
-    }
+        left: 0px;
+    }    
     
     .slider__icon--right {
-        right: 25px;
-
-        @media screen and (max-width: 376px) {
-            right: 0px;
-        }
+        right: 0px;
     }
 
     .slide {
@@ -77,7 +71,7 @@ $BackColor : #F6F6F6;
         border-radius: 20px;
         padding: 5px 15px;
 
-        @media screen and (max-width: 376px) {
+        @media screen and (max-width: 480px) {
             display: none;
         }
     }
