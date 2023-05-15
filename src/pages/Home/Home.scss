@@ -4,7 +4,7 @@ $SecondColor : white;
 .homepage {
     margin: 0px 100px;
     
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 768px) {
         margin: 0px 20px;
     }
 }
