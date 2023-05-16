@@ -12,8 +12,6 @@ const Slideshow = ({pictures}) => {
       setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
-  console.log(current);
-
   const prevSlide = () => {
       setCurrent(current === 0 ? length - 1 : current - 1);
   };
@@ -32,7 +30,7 @@ const Slideshow = ({pictures}) => {
                 {current + 1}/{length}
             </div>
           </>
-        )};
+        )}
           {pictures.map((image, index) => {
               return (
                 <div

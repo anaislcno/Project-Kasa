@@ -8,9 +8,9 @@ $BackColor : #F6F6F6;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 100px 40px 100px;
+    margin-top: 40px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         height: 255px;
         margin: 25px 0px 20px 0px;
     }
@@ -22,7 +22,7 @@ $BackColor : #F6F6F6;
         border-radius: 25px;
         object-fit: cover;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
             height: 255px;
             // width: 325px;
             width: 87vw;
@@ -36,18 +36,26 @@ $BackColor : #F6F6F6;
         cursor: pointer;
         user-select: none;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
             height: 24px;
             width: 24px;
         }
     }
     
     .slider__icon--left {
-        left: 0px;
+        left: 30px;
+
+        @media screen and (max-width: 768px) {
+            left: 10px;
+        }
     }    
     
     .slider__icon--right {
-        right: 0px;
+        right: 30px;
+
+        @media screen and (max-width: 768px) {
+            right: 10px;
+        }
     }
 
     .slide {
@@ -71,7 +79,7 @@ $BackColor : #F6F6F6;
         border-radius: 20px;
         padding: 5px 15px;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
             display: none;
         }
     }

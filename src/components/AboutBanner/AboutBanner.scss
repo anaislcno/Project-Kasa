@@ -4,25 +4,21 @@ $SecondColor : white;
 
 .about-banner {
     padding: 60px 0px 40px 0px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 376px) {
-        margin: 20px;
+    @media screen and (max-width: 480px) {
+        padding: 40px 0px 20px 0px;
     }
 
     .about-banner__img {
         object-fit: cover;
         filter: brightness(70%);
         height: 223px;
-        // width: 1240px;
         width: 100%;
         border-radius: 25px;
 
-        @media screen and (max-width: 376px) {
-            width: 335px;
+        @media screen and (max-width: 480px) {
+            width: 100%;
             height: 225px;
             border-radius: 10px;
         }

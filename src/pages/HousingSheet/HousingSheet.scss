@@ -10,6 +10,7 @@ $BackColor : #F6F6F6;
     }
 
     .global-container {
+        margin-top: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -23,10 +24,6 @@ $BackColor : #F6F6F6;
             flex-direction: column;
             justify-content: space-between;
 
-            @media screen and (max-width: 480px) {
-                // left: -70px;
-            }
-
             .housing__infos {
                 color: $MainColor;
                 margin-bottom: 20px;
@@ -36,7 +33,8 @@ $BackColor : #F6F6F6;
                 }
 
                 h1 {
-                    font-size: 36px;
+                    // font-size: 36px;
+                    font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.25rem);
                     line-height: 50px;
 
                     @media screen and (max-width: 480px) {
@@ -76,7 +74,7 @@ $BackColor : #F6F6F6;
         gap: 75px;
         margin-top: 30px;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
             flex-direction: column;
             align-items: center;
             margin-top: 0;
@@ -84,19 +82,20 @@ $BackColor : #F6F6F6;
         }
 
         .collapse__btn {
-            width: 580px;
-            // width: clamp(335px, 100%, 580px);
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+                margin-top: 20px;
+            }
 
             @media screen and (max-width: 480px) {
-                max-height: 30px;
-                max-width: 335px;
                 font-size: 13px;
-                margin: 20px 20px 0px 20px;
+                max-height: 30px;
             }
         }
 
         .collapse__text {
-            max-width: 580px;
+            max-width: 100%px;
             margin: 0;
 
             @media screen and (max-width: 480px) {
