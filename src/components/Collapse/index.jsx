@@ -15,7 +15,8 @@ const toggle = () => {
   
   return (
     <div className="collapse__wrapper">
-      <button className="collapse__btn" onClick={toggle}>{props.label}
+      <button className="collapse__btn" onClick={toggle}>
+        {props.label}
       <img className="collapse__img" src={image} alt="Toggle Collapse" />
       </button>
       {open && (
@@ -30,5 +31,5 @@ const toggle = () => {
     </div>
   )
 }
-
+ 
 export default Collapse
