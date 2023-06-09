@@ -17,5 +17,3 @@ function Header() {
 }
 
 export default Header
-
-/* <div className={index === current ? 'slide active' : 'slide'} key={index}> */
