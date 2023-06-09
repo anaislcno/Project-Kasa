@@ -20,8 +20,8 @@ const toggle = () => {
       </button>
       {open && (
         <div className="collapse__text">
-          {props.collapseDescription.map(name => (
-            <p>
+          {props.collapseDescription.map((name, index) => (
+            <p key={index}>
               {name}
             </p>
         ))}

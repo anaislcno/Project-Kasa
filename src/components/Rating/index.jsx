@@ -11,12 +11,12 @@ function Rating ({rate}) {
         // i <= rate 
         if (i <= rate) {
             stars.push(
-                <img className="star__active" src={starActive} alt="Active Star" />
+                <img key={i} className="star__active" src={starActive} alt="Active Star" />
             );
         } else {
         // i > rate 
             stars.push(
-                <img className="star__inactive" src={starInactive} alt="Inactive Star" />
+                <img key={i} className="star__inactive" src={starInactive} alt="Inactive Star" />
             );
         }
     }
