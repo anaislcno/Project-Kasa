@@ -1,19 +1,21 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/logo.svg'
 import '../Header/Header.scss'
 
 function Header() {
   return (
-    <header className='header'>
-    <Link to="/">
+    <header exact activeClassName="active" className='header'>
+    <NavLink to="/">
         <img src={Logo} alt='Logo Kasa' className='header__logo'/>
-    </Link>
+    </NavLink>
     <nav className='navbar'>
-      <Link className='navbar__link' to="/">Accueil</Link>
-      <Link className='navbar__link' to="/about">À propos</Link>
+      <NavLink activeClassName="active" className='navbar__link' to="/">Accueil</NavLink>
+      <NavLink activeClassName="active" className='navbar__link' to="/about">À propos</NavLink>
     </nav>
     </header>
   )
 }
 
 export default Header
+
+/* <div className={index === current ? 'slide active' : 'slide'} key={index}> */
