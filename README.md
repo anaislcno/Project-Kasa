@@ -1,3 +1,5 @@
+You can visit the project page by following this link : https://project-kasa-nu.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
